@@ -17,6 +17,7 @@ jobs:
             - name: Linux command
               run:  ls -ltr
     deploy:
+        needs: test
         runs-on: ubuntu-latest
         steps:
             - name: Get Code

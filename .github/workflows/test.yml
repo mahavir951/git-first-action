@@ -16,4 +16,19 @@ jobs:
               run:  echo "not run tests yet"
             - name: Linux command
               run:  ls -ltr
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Get Code
+              uses: actions/checkout@v4
+            - name: Install NodeJs
+              uses: actions/setup-node@v4
+              with:
+                node-version: "18"
+            - name: Install dependencies
+              run:  echo "No dependencies"
+            - name: run test
+              run:  echo "not run tests yet"
+            - name: Linux command
+              run:  ls -ltr
               

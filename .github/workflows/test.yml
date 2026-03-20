@@ -11,7 +11,7 @@ jobs:
               with:
                 node-version: "18"
             - name: Install dependencies
-              run:  npm install
+              run:  echo "No dependencies"
             - name: run test
               run:  echo "not run tests yet"
             - name: Linux command

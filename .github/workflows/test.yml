@@ -1,5 +1,9 @@
 name: test workflows
-on: push
+on: 
+    push:
+        branches: [main]
+        paths:
+          - '**.html'
 jobs:
     test:
         runs-on: ubuntu-latest

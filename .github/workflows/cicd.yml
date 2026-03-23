@@ -13,21 +13,21 @@ on:
          - staging
 jobs:
    code:
-    runs-on: ubuntu-latest
-    steps:
-      - name: checkout github code
-        run: echo "clone code from github"
-build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Build Docker Container
-        run: echo "Docker Container build"
-test:
-    runs-on: ubuntu-latest
-    steps:
+     runs-on: ubuntu-latest
+     steps:
+       - name: checkout github code
+         run: echo "clone code from github"
+   build:
+     runs-on: ubuntu-latest
+     steps:
+       - name: Build Docker Container
+         run: echo "Docker Container build"
+   test:
+     runs-on: ubuntu-latest
+     steps:
       - name: Test the container
         run: echo "Testing the container"
-deploy:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Deploying the app

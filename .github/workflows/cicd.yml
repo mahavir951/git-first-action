@@ -11,26 +11,23 @@ on:
          - dev
          - prod
          - staging
-
 jobs:
-  code:
+   code:
     runs-on: ubuntu-latest
     steps:
       - name: checkout github code
         run: echo "clone code from github"
-   build:
+build:
     runs-on: ubuntu-latest
     steps:
       - name: Build Docker Container
         run: echo "Docker Container build"
-
-  test:
+test:
     runs-on: ubuntu-latest
     steps:
       - name: Test the container
         run: echo "Testing the container"
-
-  deploy:
+deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Deploying the app

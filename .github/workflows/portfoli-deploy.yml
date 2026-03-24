@@ -28,6 +28,8 @@ jobs:
       # Upload static files as artifact
       - name: Upload static files
         uses: actions/upload-pages-artifact@v4
+        with:
+            path: ./
 
       # Deploy to GitHub Pages last step
       - name: Deploy to GitHub Pages

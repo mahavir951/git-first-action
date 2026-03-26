@@ -9,5 +9,5 @@ jobs:
           - name: Show OS
             run: |
               echo "This is running on an ubuntu runner"
-              echo "Runner OS: $RUNNER_OS
+              echo "Runner OS: $RUNNER_OS"
               echo "My name is Mahavir Saroj-maha"

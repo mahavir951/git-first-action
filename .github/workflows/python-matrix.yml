@@ -6,6 +6,11 @@ on:
 jobs:
     validate:
         runs-on:  ubuntu-latest
+        strategy:
+            fail-fast:
+                false
+            matrix:
+                python-version: [ 3.9, 3.10, 3.11, 3.12, 3.13 ]
 
         steps:
             - name: checkout code
@@ -22,6 +27,7 @@ jobs:
             - name: run linter for code quality check
               run: flake8 app.py
 
-              
+
+
             
 
